@@ -1,9 +1,3 @@
----
-runme:
-  id: 01HNJGYPFN28EAN3429NJNBE0T
-  version: v2.2
----
-
 # BUZZ'UP
 
 - [BUZZ'UP](#buzzup)
