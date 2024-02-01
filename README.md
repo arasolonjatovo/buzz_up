@@ -1,46 +1,110 @@
-# Getting Started with Create React App
+---
+runme:
+  id: 01HNJGYPFN28EAN3429NJNBE0T
+  version: v2.2
+---
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# BUZZ'UP
 
-## Available Scripts
+- [BUZZ'UP](#buzzup)
+  - [1.Description](#1-description)
+  - [2.Contributeurs](#2-contributeurs)
+  - [3.Fonctionnalités](#3-fonctionnalités)
+  - [4.Stacks](#4-stacks)
+  - [5.Tools](#5-tools)
+  - [6.Bonnes Pratiques](#6-bonnes-pratiques)
+  - [7.Prérequis](#7-prérequis)
+  - [8.Installation](#8-installation)
+  - [9.Palette](#9-palette)
+  - [10.Contribuer](#10-contribuer)
+  - [11.Documentation](#11-documentation)
+  - [12.Licence](#12-licence)
+  - [13.Remerciements](#13-remerciements)
 
-In the project directory, you can run:
+## 1. Description
 
-### `npm start`
+## 2. Contributeurs
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Lucas Miranda [@mirandalucas52](https://www.github.com/mirandalucas52) - Designer
+- Léo Sun [@Feydai](https://www.github.com/Feydai) - Dev Front
+- Audrey Rasolonjatovo [@arasolonjatovo](https://www.github.com/arasolonjatovo) - CTO/Tech Lead
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 3. Fonctionnalités
 
-### `npm test`
+- **Fonctionnalité 1** :
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 4. Stacks
 
-### `npm run build`
+- **Frontend** : [React](https://reactjs.org/), [TypeScript](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html), [Sass](https://sass-lang.com/documentation/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 5. Tools
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Code Quality** : [ESLint](https://eslint.org/) + [Prettier](https://prettier.io/)
+- **Prettier** : [Prettier](https://prettier.io/)
+- __Git__ : [git flow](https://danielkummer.github.io/git-flow-cheatsheet/index.fr_FR.html)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 6. Bonnes Pratiques
 
-### `npm run eject`
+- KISS
+- DRY
+- YAGNI
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 7. Prérequis
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [Node.js](https://nodejs.org/en/)
+- [npm](https://www.npmjs.com/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 8. Installation
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Cloner le projet
 
-## Learn More
+```
+  git clone https://github.com/arasolonjatovo/buzz_up.git
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Se rendre dans le dossier du projet
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+  cd buzz_up
+```
+
+Installer les dépendances
+
+``` 
+  npm install
+```
+
+Démarrer le serveur
+
+``` 
+  npm run start
+```
+
+## 9. Palette
+
+| Couleur             | Hex                                                                | Aperçu
+| ----------------- | ------------------------------------------------------------------ | -------------------- |
+| Noir | #000000 | ![#000000](https://via.placeholder.com/10/000000?text=+)|
+| Blanc | #FFFFFF | ![#FFFFFF](https://via.placeholder.com/10/FFFFFF?text=+)|
+
+## 10. Contribuer
+
+Afin de contribuer au projet, vous devez quivre les étapes suivantes. Des règles de gestion étant appliquées à la branche principale (main), personne ne peut directement envoyer du code sur celle-ci et doit passer en amont par un stade de vérification.
+
+Pour cela :
+
+- Forker le projet
+- Créer une branche pour votre fonctionnalité (`git checkout -b feature/AmazingFeature`)
+- Commit vos changements (`git commit -m 'Add some AmazingFeature'`)
+- Push sur la branche (`git push origin feature/AmazingFeature`)
+- Ouvrir une Pull Request (merci de bien assigner **@arasolonjatovo** en Reviewer)
+
+## 11. Documentation
+
+- [Cahier des charges techniques](./docs/cahier-des-charges-techniques.md)
+
+## 12. Licence
+
+ // Ce projet n'est sous aucune licence
+
+## 13. Remerciements
