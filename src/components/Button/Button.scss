@@ -1,0 +1,23 @@
+@import '../../style/variables';
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: 'Poppins';
+
+    &.primary {
+        background: $linearGradient;
+        color: white;
+    }
+
+    &.secondary {
+        border: $primaryColor 2px solid;
+        color: $primaryColor;
+        background-color: transparent;
+    }
+}
