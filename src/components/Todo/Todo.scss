@@ -1,0 +1,22 @@
+@import '../../style/variables';
+
+.todo {
+
+    &__container {
+        height: 150px;
+        padding: 30px;
+        border-radius: 25px;
+        position: relative;
+        background: linear-gradient(180deg, #b13783 0%, #700060 100%);
+    }
+
+    &__title {
+        text-align: left;
+        position: absolute;
+        bottom: 20px;
+        text-transform: uppercase;
+        color: white;
+        font-weight: 600;
+    }
+
+}
