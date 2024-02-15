@@ -1,0 +1,50 @@
+@import "../../style/variables";
+
+.input {
+    width: 100%;
+    margin-top: 8px;
+    padding: 13px;
+    background-color: transparent;
+    border-radius: 25px;
+    border: 1px solid $grey;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    font-size: 16px;
+    background-color: $light-grey;
+
+    &:focus-within {
+        outline: $primaryColor solid 2px;
+        border: white solid 1px;
+
+        .input-icon {
+            color: $primaryColor;
+        }
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    input {
+        width: 100%;
+        color: $grey;
+        background-color: transparent;
+        outline: none;
+        border: none;
+        margin-right: 10px;
+
+        &:focus {
+            outline: none;
+            color: $primaryColor;
+        }
+    }
+
+    .input-icon {
+        flex: 1;
+        font-size: 1.2em;
+        color: $grey;
+    }
+}
