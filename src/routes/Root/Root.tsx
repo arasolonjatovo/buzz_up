@@ -1,11 +1,15 @@
 import React from 'react'
+import { Outlet } from 'react-router-dom'
 
-import './Root.scss'
+import Header from '../../layout/Header/Header'
 
-type Props = {}
-
-export default function Root({}: Props) {
+export default function Root() {
   return (
-    <div>Root</div>
+    <>
+      <Header />
+      <div id="details">
+        <Outlet />
+      </div>
+    </>
   )
 }
