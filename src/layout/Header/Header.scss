@@ -1,0 +1,33 @@
+@import '../../style/variables';
+
+.navbar {
+    background-color: $primaryColor;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    width: 100vw;
+}
+
+.navbar__name {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+}
+
+.nav__list {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav__item {
+    text-transform: uppercase;
+}
+
+.nav__item a {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
