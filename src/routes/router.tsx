@@ -7,11 +7,17 @@ import ErrorPage from './ErrorPage/ErrorPage'
 import Auth from './Auth/Auth'
 import Tasks from './Tasks/Tasks'
 import Todos from './Todos/Todos'
+import Login from './LoginPage/Login'
+import SignUp from './SignUpPage/SignUp'
 
 const routes : Array<Object> = [
   {
     path: '/',
-    element: <Auth />,
+    element: <Login />,
+  },
+  {
+    path:'/signUp',
+    element: <SignUp/>,
   },
   {
     element: <Root />,

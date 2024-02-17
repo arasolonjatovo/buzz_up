@@ -26,25 +26,17 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  .inputText__container {
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
   h1,
   .text-login {
     padding-top: 10px;
     color: $primaryColor;
   }
 
-  .text-login {
+  .text__login {
     font-size: 12px;
-    margin-left: 130px;
-
+    margin-left: 300px;
+    text-decoration: none;
+    color: $primaryColor;
     &:hover {
       cursor: pointer;
       color: rgba(87, 43, 121, 0.7);
@@ -52,7 +44,7 @@
   }
 
   input {
-    margin-top: 20px;
+    margin-left: 10px;
   }
 
   Button {
