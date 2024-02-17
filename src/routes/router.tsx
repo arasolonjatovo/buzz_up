@@ -4,7 +4,6 @@ import PrivateRoute from './PrivateRoute'
 
 import Root from './Root/Root'
 import ErrorPage from './ErrorPage/ErrorPage'
-import Auth from './Auth/Auth'
 import Tasks from './Tasks/Tasks'
 import Todos from './Todos/Todos'
 import Login from './LoginPage/Login'

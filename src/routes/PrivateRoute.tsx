@@ -11,8 +11,8 @@ export default function PrivateRoute({ children }: Props) {
   const navigation = useNavigate()
 
   useEffect(() => {
-    if (userID !== 'null') {
-      navigation('/signIn')
+    if (userID === 'null') {
+      navigation('/')
     }
   }, [userID, navigation])
 
