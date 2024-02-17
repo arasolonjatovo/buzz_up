@@ -4,6 +4,7 @@ import Button from '../../components/Button/Button'
 import InputText from '../../components/Input/Input'
 import { authSignOut } from '../../firebase/authSignOut'
 import { useNavigate } from 'react-router-dom'
+import './Auth.scss'
 
 import { UserContext } from '../../context/userContext'
 
