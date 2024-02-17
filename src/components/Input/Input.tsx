@@ -18,11 +18,30 @@ type Props = {
   onClickIcon?: () => void
 }
 
-export default function Input({ label, placeholder, name, id, value, type, inputRef, onChange, required, icon, onClickIcon }: Props) {
+export default function Input({
+  label,
+  placeholder,
+  name,
+  id,
+  value,
+  type,
+  inputRef,
+  onChange,
+  required,
+  icon,
+  onClickIcon,
+}: Props) {
   return (
     <div className="input__container">
       <label htmlFor={label}>{label}</label>
       <div className="input">
+        {icon && (
+          <FontAwesomeIcon
+            className="input-icon"
+            onClick={onClickIcon}
+            icon={icon}
+          />
+        )}
         <input
           placeholder={placeholder}
           name={name}
@@ -33,13 +52,6 @@ export default function Input({ label, placeholder, name, id, value, type, input
           onChange={onChange}
           required={required}
         />
-        {icon && (
-          <FontAwesomeIcon
-            className="input-icon"
-            onClick={onClickIcon}
-            icon={icon}
-          />
-        )}
       </div>
     </div>
   )
