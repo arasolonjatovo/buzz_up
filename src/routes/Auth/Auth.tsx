@@ -75,16 +75,17 @@ const Auth: React.FC = () => {
       <div className="container__login">
         <h1>{showSignup ? 'LOGIN' : 'USER SIGN UP'}</h1>
         <InputText
-          id="image___lock"
           type="text"
-          icon={faLock}
+          icon={faUser}
+          placeholder="Email"
           onChange={(e: ChangeEvent<HTMLInputElement>) =>
             setEmail(e.target.value)
           }
         />
         <InputText
           type="password"
-          icon={faUser}
+          icon={faLock}
+          placeholder="Password"
           onChange={(e: ChangeEvent<HTMLInputElement>) =>
             setPassword(e.target.value)
           }
