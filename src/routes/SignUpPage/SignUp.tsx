@@ -3,15 +3,17 @@ import { authSignOut } from '../../firebase/authSignOut'
 import Button from '../../components/Button/Button'
 import InputText from '../../components/Input/Input'
 import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { faUser, faLock } from '@fortawesome/free-solid-svg-icons'
 
-import '../Auth/Auth.scss'
+import './SignUp.scss'
 
 import { UserContext } from '../../context/userContext'
 
 const Signup: React.FC = () => {
   const [email, setEmail] = useState<string>('')
   const [password, setPassword] = useState<string>('')
+  const [confirmPassword, setConfirmPassword] = useState<string>('')
   const [error, setError] = useState<string>('')
   const nav = useNavigate()
 
@@ -20,8 +22,13 @@ const Signup: React.FC = () => {
   const handleFormSubmit = (): void => {
     setError('')
 
-    if (!email || !password) {
+    if (!email || !password || !confirmPassword) {
       setError('Please fill in all fields.')
+      return
+    }
+
+    if (password !== confirmPassword) {
+      setError('Passwords do not match.')
       return
     }
 
@@ -59,19 +66,32 @@ const Signup: React.FC = () => {
         <InputText
           id="image___lock"
           type="text"
-          icon={faLock}
+          icon={faUser}
+          placeholder="Email"
           onChange={(e: ChangeEvent<HTMLInputElement>) =>
             setEmail(e.target.value)
           }
         />
         <InputText
           type="password"
-          icon={faUser}
+          icon={faLock}
+          placeholder="Password"
           onChange={(e: ChangeEvent<HTMLInputElement>) =>
             setPassword(e.target.value)
           }
         />
+        <InputText
+          type="password"
+          icon={faLock}
+          placeholder="Confirm Password"
+          onChange={(e: ChangeEvent<HTMLInputElement>) =>
+            setConfirmPassword(e.target.value)
+          }
+        />
         {error && <p className="error">{error}</p>}
+        <Link to="/" className="text__login">
+          Already a member?
+        </Link>
         <Button
           variant="primary"
           label="SIGN UP"

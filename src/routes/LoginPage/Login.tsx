@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import { faUser, faLock } from '@fortawesome/free-solid-svg-icons'
 
-import '../Auth/Auth.scss'
+import './Login.scss'
 
 import { UserContext } from '../../context/userContext'
 
@@ -58,7 +58,6 @@ const Login: React.FC = () => {
       <div className="container__login">
         <h1>LOGIN</h1>
         <InputText
-          id="image___lock"
           type="text"
           icon={faLock}
           onChange={(e: ChangeEvent<HTMLInputElement>) =>
