@@ -7,7 +7,7 @@ interface UserData {
   ID: string;
 }
 
-export function authSignOut(email: string, password: string): Promise<UserCredential['user']> {
+export function authSignUp(email: string, password: string): Promise<UserCredential['user']> {
   return new Promise((resolve, reject) => {
     createUserWithEmailAndPassword(auth, email, password)
       .then(async (userCredential: UserCredential) => {

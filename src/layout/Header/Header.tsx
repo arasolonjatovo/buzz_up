@@ -18,7 +18,7 @@ export default function Header() {
       .then(() => {
         setUserEmail('null')
         setUserID('null')
-        navigation('/signIn')
+        navigation('/')
       })
       .catch((error) => {
         console.error('Une erreur est survenue:', error)

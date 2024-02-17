@@ -1,5 +1,5 @@
 import React, { useState, useContext, ChangeEvent } from 'react'
-import { authSignOut } from '../../firebase/authSignOut'
+import { authSignUp } from '../../firebase/authSignUp'
 import Button from '../../components/Button/Button'
 import InputText from '../../components/Input/Input'
 import { useNavigate } from 'react-router-dom'
@@ -37,7 +37,7 @@ const Signup: React.FC = () => {
       return
     }
 
-    authSignOut(email, password)
+    authSignUp(email, password)
       .then((user) => {
         setUserEmail(user.email)
         setUserID(user.uid)
