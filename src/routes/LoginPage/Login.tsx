@@ -58,15 +58,16 @@ const Login: React.FC = () => {
       <div className="container__login">
         <h1>LOGIN</h1>
         <InputText
+          id='input__user'
           type="text"
-          icon={faLock}
+          icon={faUser}
           onChange={(e: ChangeEvent<HTMLInputElement>) =>
             setEmail(e.target.value)
           }
         />
         <InputText
           type="password"
-          icon={faUser}
+          icon={faLock}
           onChange={(e: ChangeEvent<HTMLInputElement>) =>
             setPassword(e.target.value)
           }
