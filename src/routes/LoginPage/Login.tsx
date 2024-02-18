@@ -43,9 +43,9 @@ const Login: React.FC = () => {
   }
 
   return (
-    <div className="mainContainer">
-      <div className="containerTitle">
-        <h1 className="titleAuth">CHECK-IT-OUT</h1>
+    <div className="main__container">
+      <div className="container__title">
+        <h1 className="title__auth">CHECK-IT-OUT</h1>
         <p>
           Notre todolist est votre meilleur allié pour vous aider à gérer votre
           temps, à rester organisé et à accomplir tout ce que vous souhaitez.
