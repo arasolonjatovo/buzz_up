@@ -30,7 +30,6 @@ export default function Tasks() {
         setTasks(querySnapshot.data()?.tasks || [])
         setMails(querySnapshot.data()?.user || [])
       })
-
       return unsubscribe
     }
   }, [id])
