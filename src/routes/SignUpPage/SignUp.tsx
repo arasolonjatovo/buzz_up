@@ -89,7 +89,7 @@ const Signup: React.FC = () => {
           }
         />
         {error && <p className="error">{error}</p>}
-        <Link to="/" className="text__login">
+        <Link to="/signin" className="text__login">
           Already a member?
         </Link>
         <Button

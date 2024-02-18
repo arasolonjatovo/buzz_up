@@ -2,14 +2,13 @@ import { initializeApp } from 'firebase/app'
 import { getAuth } from 'firebase/auth'
 import { getFirestore } from 'firebase/firestore'
 
-const firebaseConfig : Object = {
-  apiKey: 'AIzaSyDxvwvHoqL6UZxQoFONIa0tOgGIcVH3HFI',
-  authDomain: 'projgroupreacttodolist.firebaseapp.com',
-  projectId: 'projgroupreacttodolist',
-  storageBucket: 'projgroupreacttodolist.appspot.com',
-  messagingSenderId: '754145279912',
-  appId: '1:754145279912:web:6b3c2f33fb3ed179b3279d',
-  measurementId: 'G-JGC19C5NBD',
+const firebaseConfig = {
+  apiKey: 'AIzaSyB2BPv-6nbRh-MpZx9GSnBGYIIVKFMUq0A',
+  authDomain: 'buzzup-c0073.firebaseapp.com',
+  projectId: 'buzzup-c0073',
+  storageBucket: 'buzzup-c0073.appspot.com',
+  messagingSenderId: '473286220670',
+  appId: '1:473286220670:web:b300c4fbf110945ce4f12f',
 }
 
 const app = initializeApp(firebaseConfig)

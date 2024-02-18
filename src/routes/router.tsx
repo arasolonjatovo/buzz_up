@@ -5,18 +5,22 @@ import PrivateRoute from './PrivateRoute'
 import Root from './Root/Root'
 import ErrorPage from './ErrorPage/ErrorPage'
 import Tasks from './Tasks/Tasks'
-import Todos from './Todos/Todos'
+import Todo from './Todos/Todos'
 import Login from './LoginPage/Login'
 import SignUp from './SignUpPage/SignUp'
 
-const routes : Array<Object> = [
+const routes: Array<Object> = [
   {
     path: '/',
     element: <Login />,
   },
   {
-    path:'/signUp',
-    element: <SignUp/>,
+    path: '/signin',
+    element: <Login />,
+  },
+  {
+    path: '/signup',
+    element: <SignUp />,
   },
   {
     element: <Root />,
@@ -26,7 +30,7 @@ const routes : Array<Object> = [
         path: '/todo',
         element: (
           <PrivateRoute>
-            <Todos />
+            <Todo />
           </PrivateRoute>
         ),
       },
