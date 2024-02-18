@@ -1,0 +1,30 @@
+.emailListContainer {
+  margin: 2rem 0 4rem 0;
+
+  h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
+  input {
+    margin-right: 15px;
+  }
+
+  .emailList {
+    list-style: none;
+    margin: 1rem 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      margin: 1rem 0;
+    }
+  }
+
+  .deleteEmail {
+    background: none;
+    border: none;
+  }
+}

@@ -1,0 +1,26 @@
+.todos_header {
+  text-align: center;
+  max-width: 1250px;
+  margin: 5% auto 0;
+  padding: 2rem;
+
+  .todos__title {
+    margin: 2% 0;
+    color: var(--primaryColor);
+  }
+}
+
+#todo__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1250px;
+  margin: 1% auto 0;
+  padding: 2rem;
+
+  @media screen and (max-width: 800px) {
+    #todo__container {
+      grid-template-columns: 1fr;
+    }
+  }
+}
