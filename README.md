@@ -19,7 +19,7 @@
 
 ## 2. Contributeurs
 
-- Lucas Miranda [@mirandalucas52](https://www.github.com/mirandalucas52) - Designer
+- Lucas Miranda [@mirandalucas52](https://www.github.com/mirandalucas52) - Designer - Dev Front
 - Léo Sun [@Feydai](https://www.github.com/Feydai) - Dev Front
 - Audrey Rasolonjatovo [@arasolonjatovo](https://www.github.com/arasolonjatovo) - CTO/Tech Lead
 
