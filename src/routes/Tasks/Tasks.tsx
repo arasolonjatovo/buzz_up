@@ -25,7 +25,6 @@ export default function Tasks() {
   useEffect(() => {
     if (id) {
       const todoCollectionRef = doc(db, 'todo', id)
-
       const unsubscribe = onSnapshot(todoCollectionRef, (querySnapshot) => {
         console.log(querySnapshot.data())
         setTasks(querySnapshot.data()?.tasks || [])
