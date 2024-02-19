@@ -21,6 +21,8 @@ export default function Tasks() {
   const [filter, setFilter] = useState<string>('all')
   const [mails, setMails] = useState<Mail[]>([])
   const { id } = useParams<{ id: string }>()
+  const [editingTaskId, setEditingTaskId] = useState<number | null>(null)
+  const [editingTaskName, setEditingTaskName] = useState<string>('')
 
   useEffect(() => {
     if (id) {
@@ -33,6 +35,7 @@ export default function Tasks() {
       return unsubscribe
     }
   }, [id])
+
   const addTask = async () => {
     setNewTask('')
 
@@ -70,6 +73,27 @@ export default function Tasks() {
       if (id) {
         const docRef = doc(db, 'todo', id)
         await updateDoc(docRef, { tasks: updatedTask })
+      }
+    }
+  }
+
+  const startEditingTask = (taskId: number, taskName: string) => {
+    setEditingTaskId(taskId)
+    setEditingTaskName(taskName)
+  }
+
+  const finishEditingTask = async () => {
+    if (editingTaskId !== null) {
+      const updatedTasks = tasks.map((task) =>
+        task.id === editingTaskId ? { ...task, name: editingTaskName } : task
+      )
+      setTasks(updatedTasks)
+      setEditingTaskId(null)
+      setEditingTaskName('')
+
+      if (id) {
+        const docRef = doc(db, 'todo', id)
+        await updateDoc(docRef, { tasks: updatedTasks })
       }
     }
   }
@@ -126,13 +150,22 @@ export default function Tasks() {
         <ul className="todoUl">
           {filteredTasks.map((task) => (
             <li className="task" key={task.id}>
-              <span
-                style={{
-                  textDecoration: task.completed ? 'line-through' : 'none',
-                }}
-              >
-                {task.name}
-              </span>
+              {editingTaskId === task.id ? (
+                <input
+                  type="text"
+                  value={editingTaskName}
+                  onChange={(e) => setEditingTaskName(e.target.value)}
+                  onBlur={finishEditingTask}
+                />
+              ) : (
+                <span
+                  style={{
+                    textDecoration: task.completed ? 'line-through' : 'none',
+                  }}
+                >
+                  {task.name}
+                </span>
+              )}
               <span className="deleteCheck">
                 <input
                   type="checkbox"
@@ -142,7 +175,12 @@ export default function Tasks() {
                 />
                 <Button
                   variant="primary"
-                  label="Supprimer"
+                  label="Edit"
+                  handleClick={() => startEditingTask(task.id, task.name)}
+                />
+                <Button
+                  variant="primary"
+                  label="Delete"
                   handleClick={() => deleteTask(task.id)}
                 />
               </span>
