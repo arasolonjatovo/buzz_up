@@ -45,7 +45,7 @@ const Login: React.FC = () => {
   return (
     <div className="main__container">
       <div className="container__title">
-        <h1 className="title__auth">CHECK-IT-OUT</h1>
+        <h1 className="title__auth">BUZZ'UP</h1>
         <p>
           Notre todolist est votre meilleur allié pour vous aider à gérer votre
           temps, à rester organisé et à accomplir tout ce que vous souhaitez.
@@ -60,7 +60,6 @@ const Login: React.FC = () => {
         <InputText
           id="input__user"
           type="text"
-          placeholder="Email"
           icon={faUser}
           onChange={(e: ChangeEvent<HTMLInputElement>) =>
             setEmail(e.target.value)
@@ -68,7 +67,6 @@ const Login: React.FC = () => {
         />
         <InputText
           type="password"
-          placeholder="password"
           icon={faLock}
           onChange={(e: ChangeEvent<HTMLInputElement>) =>
             setPassword(e.target.value)
