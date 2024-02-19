@@ -30,6 +30,7 @@
 ## 4. Stacks
 
 - **Frontend** : [React](https://reactjs.org/), [TypeScript](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html), [Sass](https://sass-lang.com/documentation/)
+- **Backend** : [Firebase]
 
 ## 5. Tools
 
